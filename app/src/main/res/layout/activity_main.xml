@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:padding="@dimen/padding_large"
     tools:context=".MainActivity">
 
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:layout_marginBottom="8dp"
+       android:layout_marginBottom="@dimen/margin_large"
        android:orientation="horizontal">
 
        <TextView
@@ -19,17 +19,20 @@
            android:layout_height="wrap_content"
            android:layout_weight="1"
            android:text="BIN:"
-           android:textSize="20sp"/>
+           android:textSize="@dimen/text_large"/>
        <EditText
+           android:id="@+id/bin_input"
            android:layout_width="0dp"
-           android:layout_height="40dp"
+           android:layout_height="@dimen/text_num_system_height"
            android:layout_weight="4"
+           android:padding="@dimen/padding_normal"
+           android:inputType="number"
            android:background="@drawable/round_edit_text"/>
    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="@dimen/margin_large"
         android:orientation="horizontal">
 
         <TextView
@@ -37,17 +40,20 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="OCT:"
-            android:textSize="20sp"/>
+            android:textSize="@dimen/text_large"/>
         <EditText
+            android:id="@+id/oct_input"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/text_num_system_height"
             android:layout_weight="4"
+            android:padding="@dimen/padding_normal"
+            android:inputType="number"
             android:background="@drawable/round_edit_text"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="@dimen/margin_large"
         android:orientation="horizontal">
 
         <TextView
@@ -55,17 +61,20 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="DEC:"
-            android:textSize="20sp"/>
+            android:textSize="@dimen/text_large"/>
         <EditText
+            android:id="@+id/dec_input"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/text_num_system_height"
             android:layout_weight="4"
+            android:padding="@dimen/padding_normal"
+            android:inputType="number"
             android:background="@drawable/round_edit_text"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="@dimen/margin_large"
         android:orientation="horizontal">
 
         <TextView
@@ -73,11 +82,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="HEX:"
-            android:textSize="20sp"/>
+            android:textSize="@dimen/text_large"/>
         <EditText
+            android:id="@+id/hex_input"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/text_num_system_height"
             android:layout_weight="4"
+            android:padding="@dimen/padding_normal"
             android:background="@drawable/round_edit_text"/>
     </LinearLayout>
 </LinearLayout>
