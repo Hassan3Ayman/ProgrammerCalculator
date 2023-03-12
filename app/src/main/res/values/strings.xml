@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ProgrammerCalculator</string>
+    <string name="title_text">Numeral System</string>
 </resources>

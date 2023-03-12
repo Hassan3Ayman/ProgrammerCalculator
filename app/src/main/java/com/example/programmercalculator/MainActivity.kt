@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
                 octEditText.setText(oct)
                 hexEditText.setText(hex)
             }
-            if(newDec == null){
+            if(newDec == null  && text!!.isNotEmpty()){
                 val e = "please Enter only 0 or 1"
                 Toast.makeText(this, e, Toast.LENGTH_SHORT).show()
             }
@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
                 octEditText.setText(oct)
                 hexEditText.setText(hex)
             }
-            if(newDec == null){
+            if(newDec == null && text!!.isNotEmpty()){
                 val e = "please Enter only digit between 0 and 9"
                 Toast.makeText(this, e, Toast.LENGTH_SHORT).show()
             }
@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
                 binEditText.setText(bin)
                 hexEditText.setText(hex)
             }
-            if(newDec == null){
+            if(newDec == null && text!!.isNotEmpty()){
                 val e = "please Enter only digit between 0 and 7"
                 Toast.makeText(this, e, Toast.LENGTH_SHORT).show()
             }
@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
                 octEditText.setText(oct)
                 binEditText.setText(bin)
             }
-            if(newDec == null){
+            if(newDec == null && text!!.isNotEmpty()){
                 val e = "please Enter only digit between 0 and 9 and char a to f"
                 Toast.makeText(this, e, Toast.LENGTH_SHORT).show()
             }
